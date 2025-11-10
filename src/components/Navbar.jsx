@@ -41,9 +41,9 @@ const Navbar = () => (
               Policy
             </a>
             <ul className="dropdown-menu" aria-labelledby="policyDropdown">
-              <li><a className="dropdown-item" href="#">Policy 1</a></li>
-              <li><a className="dropdown-item" href="#">Policy 2</a></li>
-              <li><a className="dropdown-item" href="#">Policy 3</a></li>
+              <li><a className="dropdown-item" href="#">Act</a></li>
+              <li><a className="dropdown-item" href="#">Rules</a></li>
+              <li><a className="dropdown-item" href="#">Policy</a></li>
             </ul>
           </li>
 
@@ -59,7 +59,7 @@ const Navbar = () => (
             >
               Acts & Rules / Guidelines
             </a>
-            <ul className="dropdown-menu" aria-labelledby="actsDropdown">
+            <ul className="dropdown-menu" aria-labelledby="actsDropdown" style={{opacity: .8}}>
               <li><a className="dropdown-item" href="#">Acts</a></li>
               <li><a className="dropdown-item" href="#">Rules</a></li>
               <li><a className="dropdown-item" href="#">Guidelines</a></li>

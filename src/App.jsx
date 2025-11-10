@@ -1,27 +1,15 @@
 import React from "react";
-import TopBar from "./components/TopBar";
-import LogoSection from "./components/LogoSection";
-import HeroBanner from "./components/HeroBanner";
-import AboutSection from "./components/AboutSection";
-import NewsSection from "./components/NewsSection";
-import FAQSection from "./components/FAQSection";
-import PowerSection from "./components/PowerSection";
-import MapSection from "./components/MapSection";
-import GallerySection from "./components/GallerySection";
-import Footer from "./components/Footer";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import Home from "./MyPages/Home";
 
 const App = () => (
   <>
-    <TopBar />
-    <LogoSection />
-    <HeroBanner />
-    <AboutSection />
-    <NewsSection />
-    <FAQSection />
-    <PowerSection />
-    <MapSection />
-    <GallerySection />
-    <Footer />
+  <Router>
+     <Routes>
+        <Route path="/" element={<Home />} />
+        
+      </Routes>
+      </Router>
   </>
 );
 export default App;

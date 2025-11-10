@@ -2,16 +2,67 @@ import React from "react";
 import Navbar from "./Navbar";
 
 const HeroBanner = () => (
-  <section className="hero-banner d-flex align-items-center justify-content-center text-center text-white">
-    <div className="overlay"></div>
-    <Navbar />
-    <div className="container position-relative">
-      <h1 className="ms-5 mb-3 text-start">
-        Welcome to <span className="highlight">Department</span> <br />
-        <span className="highlight">of Power</span>
-        Government <br /> of West Bengal
-      </h1>
+  <section className="hero-banner text-white position-relative">
+  {/* ✅ Navbar Section */}
+  <Navbar/> 
+  {/* ✅ Slider Section */}
+  <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel">
+    <div className="carousel-inner">
+      {/* ✅ Slide 1 */}
+      <div className="carousel-item active">
+        <img
+          src="./images/banner1.png"
+          className="d-block w-100"
+          alt="Banner 1"
+        />
+        <div className="carousel-caption text-start container">
+          <h1>
+            Welcome to
+            <br /> <span className="highlight">Department</span>
+            <span className="highlight">of Power</span>
+            <br />
+            Government of West Bengal
+          </h1>
+        </div>
+      </div>
+      {/* ✅ Slide 2 */}
+      <div className="carousel-item">
+        <img
+          src="./images/banner2.png"
+          className="d-block w-100"
+          alt="Banner 2"
+        />
+        <div className="carousel-caption text-start  container">
+          <h1>
+            Empowering
+            <br /> <span className="highlight">West Bengal</span>
+            Towards a <br />
+            <span className="highlight">Brighter Future</span>
+          </h1>
+        </div>
+      </div>
     </div>
-  </section>
+    {/* ✅ Carousel Controls */}
+    <button
+      className="carousel-control-prev"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="prev"
+    >
+      <span className="carousel-control-prev-icon" aria-hidden="true" />
+      <span className="visually-hidden">Previous</span>
+    </button>
+    <button
+      className="carousel-control-next"
+      type="button"
+      data-bs-target="#heroCarousel"
+      data-bs-slide="next"
+    >
+      <span className="carousel-control-next-icon" aria-hidden="true" />
+      <span className="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
 );
 export default HeroBanner;
